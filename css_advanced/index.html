@@ -1,5 +1,7 @@
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -65,7 +67,7 @@
 
     .feature-box {
       flex: 1 1 calc(25% - 20px);
-      background-color: #f0f0f0;
+      background-color: hwb(0 16% 83%);
       padding: 15px;
       box-sizing: border-box;
       text-align: center;
@@ -84,7 +86,7 @@
 
     .feature-box p {
       font-size: 14px;
-      color: #555;
+      color: hwb(180 90% 7%);
     }
 
     @media screen and (max-width: 768px) {
@@ -100,29 +102,26 @@
 
 </head>
 <body>
-
-<header>
-    <!-- Logo link with image -->
+<!-- Hero/Banner Section -->
+<section class="hero-banner">
+  <header>
     <a href="#" class="logo">
-  <img src="Images/logo.png" alt="A smiling emoticon">
-</a>
+      <img src="Images/logo.png" alt="A smiling emoticon">
+    </a>
 
-    <!-- Block of 3 link elements -->
     <div class="nav-links">
       <a href="#COURSES">COURSES</a>
       <a href="#PRICING">PRICING</a>
       <a href="#LOGIN">LOGIN</a>
     </div>
-  </header>   
+  </header>
 
-  <main>
-    <section>
-      <!-- First Block -->
-      <div class="intro">
-        <h2>Welcome to Tech 2025</h2>
-        <p>Join us for an unforgettable experience where technology meets innovation.</p>
-        <button>Register Now</button>
-      </div>
+  <!-- Intro Block -->
+  <div class="intro">
+    <h2>Welcome to Tech 2025</h2>
+    <p>Join us for an unforgettable experience where technology meets innovation.</p>
+    <button>Register Now</button>
+  </div>
 
       <!-- Second Block -->
       <div class="features">
@@ -150,78 +149,129 @@
           </div>
         </div>
       </div>
-      <!-- Quote Section -->
-  <section class="quote-section">
-    <div class="quote-container">
-      <!-- Image -->
-      <img src="Images/IMG_4108~2.jpg" alt="Portrait of the author" class="quote-image">
+      </section>
 
-      <!-- Quote block -->
-      <div class="quote-content">
-        <blockquote>
-          "Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And its so fun!"
-        </blockquote>
-        <p class="quote-author">— Osinachi Aluche</p>
-        <p class="quote-description">
-          This quote captures the spirit of Tech 2025 exercise experience — uniting minds through innovation.
-        </p>
-      </div>
+      <div class="quote-video-wrapper">
+  <!-- Quote Section -->
+  <section class="quote-section">
+  <div class="quote-container">
+    <!-- Image -->
+    <img src="Images/IMG_4108~2.jpg" alt="Portrait of the author" class="quote-image" />
+
+    <!-- Quote block -->
+    <div class="quote-content">
+      <blockquote>
+        "Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!"
+      </blockquote>
+      <p class="quote-author">— Osinachi Aluche</p>
+      <p class="quote-description">
+        This quote captures the spirit of Tech 2025 exercise experience — uniting minds through innovation.
+      </p>
     </div>
-    </section>
-    <section class="videos-section">
+  </div>
+</section>
+
+  <section class="videos-section">
   <h2>Featured Videos</h2>
   <div class="videos-container">
     <!-- Video 1 -->
     <div class="video-card">
-      <img src="Images/4.png" alt="Video 1 thumbnail" class="video-thumbnail">
+      <div class="video-thumbnail-container">
+      <img src="Images/4.png" alt="Video 1 thumbnail" class="video-thumbnail" />
+      <img src="Images/play.png" alt="Play" class="play-button" />
+      </div>
       <h3>Understanding AI Basics</h3>
       <p>Explore the fundamentals of Artificial Intelligence and its real-world applications.</p>
-      
       <div class="video-author">
-        <img src="Images/2.png"Author 1" class="author-img">
+        <img src="Images/2.png" alt="Author 1" class="author-img" />
         <h4>Jane Doe</h4>
       </div>
-
       <div class="video-rating">
         <div class="stars">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
         </div>
-        <p>4.0 (200 reviews)</p>
+        <p>4.8 (320 reviews)</p>
       </div>
     </div>
 
-    <!-- Repeat similar blocks for Video 2, 3, 4 -->
+    <!-- Video 2 -->
     <div class="video-card">
-      <img src="Images/9.png" alt="Video 2 thumbnail" class="video-thumbnail">
+      <div class="video-thumbnail-container">
+      <img src="Images/1.png" alt="Video 2 thumbnail" class="video-thumbnail" />
+       <img src="Images/play.png" alt="Play" class="play-button" />
+       </div>
       <h3>Intro to Cybersecurity</h3>
       <p>Learn how to protect your data and stay safe online.</p>
-      
       <div class="video-author">
-        <img src="Images/8.png" alt="Author 2" class="author-img">
+        <img src="Images/8.png" alt="Author 2" class="author-img" />
         <h4>John Smith</h4>
       </div>
-
       <div class="video-rating">
         <div class="stars">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="star">
-          <img src="Images/rating.png" alt="half star">
-          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
         </div>
-        <p>3.5 (150 reviews)</p>
+        <p>4.5 (210 reviews)</p>
       </div>
     </div>
 
-    <!-- Add Video 3 -->
-    <!-- Add Video 4 -->
+    <!-- Video 3 -->
+    <div class="video-card">
+      <div class="video-thumbnail-container">
+      <img src="Images/6.png" alt="Video 3 thumbnail" class="video-thumbnail" />
+       <img src="Images/play.png" alt="Play" class="play-button" />
+       </div>
+      <h3>Web Development Essentials</h3>
+      <p>Master HTML, CSS, and JavaScript for beginner-level web projects.</p>
+      <div class="video-author">
+        <img src="Images/6.png" alt="Author 3" class="author-img" />
+        <h4>Oliver Paula</h4>
+      </div>
+      <div class="video-rating">
+        <div class="stars">
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="half-star" />
+        </div>
+        <p>4.3 (175 reviews)</p>
+      </div>
+    </div>
 
+    <!-- Video 4 -->
+    <div class="video-card">
+      <div class="video-thumbnail-container">
+      <img src="Images/3.png" alt="Video 4 thumbnail" class="video-thumbnail" />
+       <img src="Images/play.png" alt="Play" class="play-button" />
+       </div>
+      <h3>UX/UI Design Tips</h3>
+      <p>Discover practical techniques to improve user experience in your apps.</p>
+      <div class="video-author">
+        <img src="Images/9.png" alt="Author 4" class="author-img" />
+        <h4>Chioma Aluche</h4>
+      </div>
+      <div class="video-rating">
+        <div class="stars">
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="star" />
+          <img src="Images/rating.png" alt="half-star" />
+        </div>
+        <p>4.6 (290 reviews)</p>
+      </div>
+    </div>
   </div>
 </section>
+
 
 <section class="membership-section">
   <h2>Choose Your Membership</h2>
