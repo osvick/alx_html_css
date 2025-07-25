@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       background-color: #f0f0f0;
+       padding: 10px 20px;
+    }
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .logo img {
+      height: 40px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro {
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+    }
+
+    .intro p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .intro button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .features h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .features-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature-box {
+      flex: 1 1 calc(25% - 20px);
+      background-color: #f0f0f0;
+      padding: 15px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .feature-box img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .feature-box h4 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .feature-box p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media screen and (max-width: 768px) {
+      .features-container {
+        flex-direction: column;
+      }
+
+      .feature-box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+    <!-- Logo link with image -->
+    <a href="#" class="logo">
+  <img src="Images/logo.png" alt="A smiling emoticon">
+</a>
+
+    <!-- Block of 3 link elements -->
+    <div class="nav-links">
+      <a href="#COURSES">COURSES</a>
+      <a href="#PRICING">PRICING</a>
+      <a href="#LOGIN">LOGIN</a>
+    </div>
+  </header>   
+
+  <main>
+    <section>
+      <!-- First Block -->
+      <div class="intro">
+        <h2>Welcome to Tech 2025</h2>
+        <p>Join us for an unforgettable experience where technology meets innovation.</p>
+        <button>Register Now</button>
+      </div>
+
+      <!-- Second Block -->
+      <div class="features">
+        <h3>Conference Highlights</h3>
+        <div class="features-container">
+          <div class="feature-box">
+            <img src="Images/IMG_4108~2.jpg" alt="Networking Icon">
+            <h4>Osinachi Aluche</h4>
+            <p>Best Smile of the Year.</p>
+          </div>
+          <div class="feature-box">
+            <img src="Images/5.png" alt="Workshops Icon">
+            <h4>Bruce Walters</h4>
+            <p>Second Best Smile of the Year.</p>
+          </div>
+          <div class="feature-box">
+            <img src="Images/9.png" alt="Keynotes Icon">
+            <h4>Nannie Lawrence</h4>
+            <p>Third Best Smile of the Year.</p>
+          </div>
+          <div class="feature-box">
+            <img src="Images/7.png" alt="Exhibition Icon">
+            <h4>Chioma Chidimma</h4>
+            <p>Fourth Best Smile of the Year.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="quote-container">
+      <!-- Image -->
+      <img src="Images/IMG_4108~2.jpg" alt="Portrait of the author" class="quote-image">
+
+      <!-- Quote block -->
+      <div class="quote-content">
+        <blockquote>
+          "Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And its so fun!"
+        </blockquote>
+        <p class="quote-author">— Osinachi Aluche</p>
+        <p class="quote-description">
+          This quote captures the spirit of Tech 2025 exercise experience — uniting minds through innovation.
+        </p>
+      </div>
+    </div>
+    </section>
+    <section class="videos-section">
+  <h2>Featured Videos</h2>
+  <div class="videos-container">
+    <!-- Video 1 -->
+    <div class="video-card">
+      <img src="Images/4.png" alt="Video 1 thumbnail" class="video-thumbnail">
+      <h3>Understanding AI Basics</h3>
+      <p>Explore the fundamentals of Artificial Intelligence and its real-world applications.</p>
+      
+      <div class="video-author">
+        <img src="Images/2.png"Author 1" class="author-img">
+        <h4>Jane Doe</h4>
+      </div>
+
+      <div class="video-rating">
+        <div class="stars">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star">
+        </div>
+        <p>4.0 (200 reviews)</p>
+      </div>
+    </div>
+
+    <!-- Repeat similar blocks for Video 2, 3, 4 -->
+    <div class="video-card">
+      <img src="Images/9.png" alt="Video 2 thumbnail" class="video-thumbnail">
+      <h3>Intro to Cybersecurity</h3>
+      <p>Learn how to protect your data and stay safe online.</p>
+      
+      <div class="video-author">
+        <img src="Images/8.png" alt="Author 2" class="author-img">
+        <h4>John Smith</h4>
+      </div>
+
+      <div class="video-rating">
+        <div class="stars">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="star">
+          <img src="Images/rating.png" alt="half star">
+          <img src="Images/rating.png" alt="star">
+        </div>
+        <p>3.5 (150 reviews)</p>
+      </div>
+    </div>
+
+    <!-- Add Video 3 -->
+    <!-- Add Video 4 -->
+
+  </div>
+</section>
+
+<section class="membership-section">
+  <h2>Choose Your Membership</h2>
+  <div class="membership-container">
+
+    <!-- Membership 1 -->
+    <div class="membership-card">
+      <img src="images/basic.png" alt="Basic Membership" class="membership-image">
+      <h3>Basic Plan</h3>
+      <p>Get access to weekly newsletters and limited resources.</p>
+      <button>Join Now</button>
+    </div>
+
+    <!-- Membership 2 -->
+    <div class="membership-card">
+      <img src="images/standard.png" alt="Standard Membership" class="membership-image">
+      <h3>Standard Plan</h3>
+      <p>Includes Basic features + exclusive community access.</p>
+      <button>Join Now</button>
+    </div>
+
+    <!-- Membership 3 -->
+    <div class="membership-card">
+      <img src="images/premium.png" alt="Premium Membership" class="membership-image">
+      <h3>Premium Plan</h3>
+      <p>Unlock all content, resources, and event discounts.</p>
+      <button>Join Now</button>
+    </div>
+
+    <!-- Membership 4 -->
+    <div class="membership-card">
+      <img src="images/vip.png" alt="VIP Membership" class="membership-image">
+      <h3>VIP Plan</h3>
+      <p>All Premium benefits + 1-on-1 mentorship sessions.</p>
+      <button>Join Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-row">
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <h3>What is TechCon 2024?</h3>
+      <p>TechCon 2024 is a global tech conference bringing together industry leaders, developers, and enthusiasts to share knowledge and explore innovations.</p>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <h3>How do I register?</h3>
+      <p>You can register through our official registration page. Simply fill out the form and choose a suitable membership plan.</p>
+    </div>
+  </div>
+
+  <div class="faq-row">
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <h3>Can I attend online?</h3>
+      <p>Yes, TechCon 2024 offers both in-person and virtual attendance options for convenience and accessibility.</p>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item">
+      <h3>Will there be recordings?</h3>
+      <p>All sessions will be recorded and made available to Premium and VIP members after the conference ends.</p>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-row">
+      <!-- Logo Image -->
+      <img src="logo-footer.png" alt="TechCon Logo" class="footer-logo">
+
+      <!-- Social & Text Block -->
+      <div class="footer-info">
+        <!-- Social Links -->
+        <div class="footer-socials">
+          <a href="https://twitter.com" target="_blank">
+            <img src="twitter-icon.png" alt="Twitter">
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src="facebook-icon.png" alt="Facebook">
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn">
+          </a>
+        </div>
+
+        <!-- Footer Text -->
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
