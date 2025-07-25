@@ -65,7 +65,7 @@ To run this project:
 1. Clone the repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/osvick/alx_html_css.git
    ```
 2. Open `index.html` in your browser.
 
