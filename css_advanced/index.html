@@ -67,7 +67,7 @@
 
     .feature-box {
       flex: 1 1 calc(25% - 20px);
-      background-color: hwb(0 16% 83%);
+      background-color: lab(16.79% 0.91 0.32);
       padding: 15px;
       box-sizing: border-box;
       text-align: center;
@@ -89,9 +89,9 @@
       color: hwb(180 90% 7%);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       .features-container {
-        flex-direction: column;
+        flex-direction: fill screen;
       }
 
       .feature-box {
