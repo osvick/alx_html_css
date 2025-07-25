@@ -223,10 +223,10 @@ section {
 
 .video-card {
   flex: 1 1 calc(25% - 20px); /* 4 items per row */
-  background-color: #f7f7f7;
+  background-color: hwb(306 89% 7%);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 8px #c959c996;
   box-sizing: border-box;
   max-width: 250px;
   text-align: center;
@@ -270,6 +270,7 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: hsl(295, 81%, 68%);
   margin-top: 10px;
   justify-content: end;
 }
