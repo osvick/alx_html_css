@@ -43,9 +43,9 @@ The mobile version adjusts layout elements for small screen usability, such as s
 ## 🗂️ Project Structure
 
 📁 project-folder/
-├── 📄 index.html
-├── 📄 styles.css
-└── 📁 images/
+  ├── 📄 index.html
+  ├── 📄 styles.css
+  └── 📁 images/
 
 ---
 
