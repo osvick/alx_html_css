@@ -1,0 +1,165 @@
+/* General Reset and Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  height: 30px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+/* Hamburger toggle & input */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  z-index: 1100;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 250px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro block */
+.intro {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.intro h2 {
+  font-size: 36px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+.intro button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff2600c9;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px 0;
+    order: 3;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+  /* Show nav when checked */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Hamburger into X */
+  #menu-toggle:checked + .hamburger .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
