@@ -77,7 +77,7 @@ header {
 
 /* Hero Banner */
 .hero-banner {
-  background-image: url("images/headphones_hero_1.jpg");
+  background-image: url("/headphones/images/headphones_hero_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 12%;
+  font-weight: 100;
+}
+
+.features {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Icons Layout */
+.icons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  text-align: center;
+}
+
+.icon svg {
+  width: 60px;
+  height: 60px;
+  fill: #FF6565; /* Icon color */
+  margin-bottom: 10px;
+}
+
+.icon p {
+  font-size: 14px;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .icons-section {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
