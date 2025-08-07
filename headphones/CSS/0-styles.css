@@ -18,7 +18,7 @@ img {
 /* Header */
 header {
   display: flex;
-  position: absolute;
+  position: static;
   top: 20px;
   left: 0;
   width: 100%;
@@ -81,7 +81,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 250px 30px;
+  padding: 100px 30px;
   position: relative;
   z-index: 1;
 }
@@ -108,7 +108,13 @@ header {
   background-color: #ff2600c9;
   color: #fff;
   border-radius: 20px;
-  cursor: pointer;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF6565;
+  transform: scale(1.05);
 }
 
 /* Mobile Styles */
